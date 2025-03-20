@@ -1,0 +1,9 @@
+<p>counter</p>
+<hr>
+<p>counter signal: {{ counterSignal() }}</p>
+<p>counter: {{ counter }}</p>
+<hr>
+<button (click)="increeaseBy(1)">+1</button>
+<button (click)="reset()">Reset</button>
+<button (click)="go()">Ir</button>
+<a [routerLink]="['/hero']">ir a heroe</a> 

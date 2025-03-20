@@ -1,0 +1,11 @@
+<p><span style="font-weight: bolder;">Hero:</span> {{ heroDescription() }}</p>
+<p><span style="font-weight: bolder;">Hero:</span> {{ getHeroDescription() }}</p>
+
+<hr>
+<p>name: {{ name() | uppercase }}</p>
+<p>age: {{ age() }}</p>
+
+<button (click)="changeHero()" class="btn btn-primary">Change Hero</button>
+<button (click)="resetHero()" class="btn btn-secondary">Reset Hero</button>
+<button (click)="changeAge(60)" class="btn btn-danger">Change Age</button>
+

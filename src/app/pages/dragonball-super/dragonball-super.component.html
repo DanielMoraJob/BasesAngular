@@ -1,0 +1,11 @@
+<h1>Dragon ball super</h1>
+<hr>
+<section class="row">
+    <div class="col-md-6">
+    <app-character-add (newCharacter)="addHeroes($event)"></app-character-add>
+    </div>
+
+    <div class="col-md-6">
+        <app-character-list [heroes]="heroes()" listName="Super Heroes"></app-character-list>
+    </div>
+</section>

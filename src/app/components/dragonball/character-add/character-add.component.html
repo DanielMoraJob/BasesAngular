@@ -1,0 +1,5 @@
+<h3>Agregar: {{name()}}</h3>
+<input type="text" class="form-control" placeholder="Nombre" [value]="name()" (change)="changeName($event)">
+<input type="number" class="form-control" placeholder="Poder" [value]="power()" (change)="changePower($event)">
+<br>
+<button class="btn btn-primary" (click)="addHero()">Agregar</button>

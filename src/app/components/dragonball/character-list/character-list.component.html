@@ -1,0 +1,8 @@
+<H3>{{ listName() }}</H3>
+<ul>
+    @for (hero of heroes(); track hero; let i = $index) {
+        <li>
+          {{ i + 1 }} - {{ hero.name }} - <span [ngClass]="{'text-danger': hero.power >= 100}">{{ hero.power }}</span>
+        </li>
+      }
+</ul>
